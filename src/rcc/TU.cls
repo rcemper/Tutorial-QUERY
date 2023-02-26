@@ -16,7 +16,9 @@ Method OnPopulate() As %Status [ ServerOnly = 1 ]
   set st=..Stream
   set st.LineTerminator="||"
   do st.WriteLine(##class(%PopulateUtils).Mission())
-  for i=1:1:50 do st.WriteLine(##class(%PopulateUtils).Syllable(..Age))
+  for i=1:1:$R(50)+3 {
+      do st.WriteLine(##class(%PopulateUtils).Syllable(..Age))
+  }
   do st.Write("***Done***")
   do st.%Save()
   quit $$$OK

@@ -9,7 +9,7 @@ Property Age As %Integer(MAXVAL = 110, MINVAL = 10);
 
 Property Stream As %Stream.GlobalCharacter;
 
-/// do whr %Populate is unable to do
+/// do what %Populate is unable to do
 Method OnPopulate() As %Status [ ServerOnly = 1 ]
 {
   #Dim st as %Stream.GlobalCharacter

@@ -4,7 +4,7 @@ contribution was an SQL statement. 
 
 Now we enter the real **Custom Class Query** that provides more freedom but  
 requires a deeper understanding of the mechanic behind the scene.  
-the full code example si again on [**GitHub**](https://github.com/rcemper/Tutorial-QUERY)
+The full code example is again on [**GitHub**](https://github.com/rcemper/Tutorial-QUERY)
 
 Some things haven't changed:
 

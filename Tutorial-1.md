@@ -127,4 +127,4 @@ And it looks like this:
 
 It's immediately obvious to you that instead of the Stream content you get a mystic StreamReference
 
-Follow me on to the **next chapter** of a custom code based Query.  
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) of a custom code based Query.  

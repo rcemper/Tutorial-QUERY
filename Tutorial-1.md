@@ -51,17 +51,17 @@ and also the whole ID=3 to simulate missing content.
 **The case %SQLquery**
 
 You create an empty class frame  (**rcc.TU0**) and let the wizard add a Query  
-![](/sites/default/files/inline/images/images/image(5652).png)
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5652).png)
 
 And it guides you through all the required parameters:  
 We first create a **Basic Class Query**   
-![](/sites/default/files/inline/images/images/image(5653).png)  
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5653).png)  
 and add our input parameters  (I have just 1)  
-![](/sites/default/files/inline/images/images/image(5654).png)  
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5654).png)  
 and  
 ![](/sites/default/files/inline/images/images/image(5655).png)  
 that's the result  
-![](/sites/default/files/inline/images/images/image(5656).png)
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5656).png)
 
 That's not so impressive yet and you need to add some more parameters + your Query!  
 you may do it just by typing or using Studio's Inspector which knows all quotes and brackets
@@ -72,7 +72,7 @@ you may do it just by typing or using Studio's Inspector which knows all quotes 
 *   **most important:** your SQL statement applying your input parameters as host variables
 
 so it looks like this:  
-![](/sites/default/files/inline/images/images/image(5657).png)
+![]([/](https://community.intersystems.com/sites/default/files/inline/images/images/image(5657).png)
 
 ### WHAT IS THIS GOOD FOR ?
 
@@ -128,5 +128,3 @@ And it looks like this:
 It's immediately obvious to you that instead of the Stream content you get a mystic StreamReference
 
 Follow me on to the **next chapter** of a custom code based Query.  
-  
-I hope you liked it so far and I count on your votes

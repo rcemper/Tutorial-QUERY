@@ -59,8 +59,8 @@ We first create a **Basic Class Query** 
 and add our input parameters  (I have just 1)  
 ![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5654).png)  
 and  
-![](/sites/default/files/inline/images/images/image(5655).png)  
-that's the result  
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5655).png)  
+that is the result  
 ![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5656).png)
 
 That's not so impressive yet and you need to add some more parameters + your Query!  

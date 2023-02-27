@@ -31,7 +31,7 @@ ClassMethod Q2Execute(
 }
 
 /// clean environment
-ClassMethod Q2Close(ByRef qHandle As %Binary) As %Status [ PlaceAfter = Q1Execute ]
+ClassMethod Q2Close(ByRef qHandle As %Binary) As %Status [ PlaceAfter = Q2Execute ]
 {
   kill qHandle
   Quit $$$OK
@@ -42,7 +42,7 @@ ClassMethod Q2Close(ByRef qHandle As %Binary) As %Status [ PlaceAfter = Q1Execut
 ClassMethod Q2Fetch(
 	ByRef qHandle As %Binary,
 	ByRef Row As %List,
-	ByRef AtEnd As %Integer = 0) As %Status [ PlaceAfter = Q1Execute ]
+	ByRef AtEnd As %Integer = 0) As %Status [ PlaceAfter = Q2Execute ]
 {
   /// first access
   if qHandle.id<qHandle.idfrom set qHandle.id=qHandle.idfrom

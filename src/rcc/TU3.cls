@@ -78,8 +78,4 @@ nextrec
   Quit $$$OK
 }
 
-ClassMethod Piece(ByRef qj As %Binary) As %Status
-{
-}
-
 }

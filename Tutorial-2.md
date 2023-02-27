@@ -25,12 +25,12 @@ So what is different?
 
 so we take our choice:   
 as before we use the Studio's Query Wizard  
-![](/sites/default/files/inline/images/images/image(5659).png)
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5659).png)
 
 we have 3 parameters: idfrom (first ID), isto (last ID), maxtxt (maxim text from stream)  
-![](/sites/default/files/inline/images/images/image(5660).png)  
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5660).png)  
 and **new** the layout of our output (ROWSPEC), similar to above  
-![](/sites/default/files/inline/images/images/image(5662).png)  
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5662).png)  
 for our Stream, we need to overwrite %String defaults to match ODBC / JDBC  
 The type needs to be `%String(EXTERNALSQLTYPE = "LONGVARCHAR", MAXLEN = "")`​​​  
 This is the generated code framework:
@@ -117,7 +117,7 @@ we still need to add `CONTAINID=1` and   `[ SqlName = Q1, SqlProc ]`
           Quit $$$OK
         }
     
-*   and here a short tests
+*   and here a short test
     
         USER>>call rcc.Q1(4,7)
         8.      call rcc.Q1(4,7)
@@ -135,10 +135,7 @@ we still need to add `CONTAINID=1` and   `[ SqlName = Q1, SqlProc ]`
                                   cached query class: %sqlcq.SAMPLES.cls66
         ---------------------------------------------------------------------------
     
-
 Getting just begin of our stream is not always sufficient.
 
 Follow me on to the **next chapter** for the extension of this example  
 will show and control more result lines.  
-  
-I hope you liked it so far and I count on your votes

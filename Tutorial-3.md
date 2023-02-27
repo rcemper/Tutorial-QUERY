@@ -102,7 +102,6 @@ for shortee streams it terminates when stream ends
 *   and also allow groups of segments
 *   As the basic functionality is there it's more a matter of chopping the streams 
 
-Follow me on to the **next chapter** for the extension of this example   
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-4.md) for the extension of this example   
 will show and control more result lines.
 
-I hope you liked it so far and I count on your votes

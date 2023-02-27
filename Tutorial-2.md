@@ -137,5 +137,5 @@ we still need to add `CONTAINID=1` and   `[ SqlName = Q1, SqlProc ]`
     
 Getting just begin of our stream is not always sufficient.
 
-Follow me on to the **next chapter** for the extension of this example  
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-3.md) for the extension of this example  
 will show and control more result lines.  

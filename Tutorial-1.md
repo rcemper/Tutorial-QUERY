@@ -66,18 +66,18 @@ This is the generated code framework:
 ````
 we still need to add `CONTAINID=1` and   `[ SqlName = Q1, SqlProc ]`
 
-*   **Query Q1()** is the descriptor used by the interface support
-*   **qHandle** is the common data structure for all 3 methods   
-   - whatever you pass along to the next row processing needs to be stored there.    
-   -   e.g. first ID, last ID, actual ID, ......   
-   - In past this was typically a subscripted variable or some oref   
-   - As a personal experiment, I tried a JSON object and it worked fine. 
+- **Query Q1()** is the descriptor used by the interface support
+- **qHandle** is the common data structure for all 3 methods   
+-- whatever you pass along to the next row processing needs to be stored there.    
+--      e.g. first ID, last ID, actual ID, ......   
+-- In past this was typically a subscripted variable or some oref   
+-- As a personal experiment, I tried a JSON object and it worked fine. 
  
 The query takes 3 simple input parameters:    
 - **idfrom** = first ID to show
 - **idto** = last ID to show - missing shos al higher IDs available
 - **maxtxt** = maximum text from the beginning of the stream. Default = 25 
-   ```` 
+```` 
         ClassMethod Q1Execute(
             ByRef qHandle As %Binary,
             idfrom As %Integer = 1,
@@ -93,9 +93,16 @@ The query takes 3 simple input parameters:
           set qHandle.maxtxt=maxtxt
           Quit $$$OK
         }
- ````   
-**Q1Fetch** is the biggest working  bloc  
-- I used object access in this example to keep it more readable Accessing the Globals for Date and Stream directly was remarkable faster but really hard to read and to follow, The more important point is that you can do whatever you like, not just collect or select data. Many management routines use it to display Processes, actual Users,  ... whatever can be presented as a table.  The point is to compose the $LB() for Row and return it and once you are done, Set AtEnd=1, and the query terminates. In this example, the major challenge is to skip nonexisting objects and to skip no existing streams to avoid empty result lines.
+````   
+- **Q1Fetch** is the biggest working  bloc  
+-- I used object access in this example to keep it more readable   
+-- Accessing the Globals for Date and Stream directly was remarkable faster but really hard to read and to follow.  
+-- The more important point is that you can do whatever you like, not just collect or select data.   
+-- Many management routines use it to display Processes, actual Users,  ... whatever can be presented as a table.    
+-- The point is to compose the $LB() for Row and return it and once you are done,   
+-- Set AtEnd=1, and the query terminates.  
+-- In this example, the major challenge is to skip nonexisting objects   
+-- and to skip no existing streams to avoid empty result lines.
  ````   
         /// that's where the music plays
         /// called for evey row delivered
@@ -129,23 +136,22 @@ The query takes 3 simple input parameters:
 ````    
 *   and here a short test
 ````    
-        USER>>call rcc.Q1(4,7)
-        8.      call rcc.Q1(4,7)
+USER>>call rcc.Q1(4,7)
+ 8.      call rcc.Q1(4,7)
 
-        Dumping result #1
+Dumping result #1
 ID      City    Name    Age     Stream
 4       Newton  Evans   61
 5       Hialeah Zemaiti 47      Resellers of premise-base
 6       Elmhurs Jenkins 29      Enabling individuals and
 7       Islip   Drabek  61      Building shareholder valu
-         
-        4 Rows(s) Affected
-        statement prepare time(s)/globals/lines/disk: 0.0065s/1982/14324/0ms
-                  execute time(s)/globals/lines/disk: 0.0010s/31/2120/0ms
-                                  cached query class: %sqlcq.USER.cls66
-        ---------------------------------------------------------------------------
+  
+4 Rows(s) Affected
+statement prepare time(s)/globals/lines/disk: 0.0065s/1982/14324/0ms
+          execute time(s)/globals/lines/disk: 0.0010s/31/2120/0ms
+                           cached query class: %sqlcq.USER.cls66
+---------------------------------------------------------------------------
 ````  
-Getting just begin of our stream is not always sufficient.
+Getting just the beginning of our stream is not always sufficient.
 
-Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) for the extension of this example  
-will show and control more result lines.  
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) for the extension of this example will show and control more result lines.  

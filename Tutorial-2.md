@@ -34,22 +34,22 @@ pieces of our stream.
 and it looks like that:  
  
 
-    SAMPLES>>call rcc.Q2(1,,,3)
+    USER>>call rcc.Q2(1,,,3)
     11.     call rcc.Q2(1,,,3)
     
     Dumping result #1
     ID      chunk   City    Name    Age     Stream
-    1       1       Bensonhurst     Kovalev 16      Building shareholder valu
+    1       1       Bensonh Kovalev 16      Building shareholder valu
     _       2       _       _       _       e by delivering secure di
     _       3       _       _       _       stributed devices and med
-    2       1       Queensbury      Yeats   15      Spearheading the next gen
+    2       1       Queensb Yeats   15      Spearheading the next gen
     _       2       _       _       _       eration of high-performan
     _       3       _       _       _       ce genetic virtualized in
     4       1       Newton  Evans   61
-    5       1       Hialeah Zemaitis        47      Resellers of premise-base
+    5       1       Hialeah Zemaiti 47      Resellers of premise-base
     _       2       _       _       _       d secure XML services for
     _       3       _       _       _        social networks.||TwoToL
-    6       1       Elmhurst        Jenkins 29      Enabling individuals and
+    6       1       Elmhurs Jenkins 29      Enabling individuals and
     _       2       _       _       _       businesses to manage ente
     _       3       _       _       _       rprise models for social
     7       1       Islip   Drabek  61      Building shareholder valu
@@ -62,7 +62,7 @@ and it looks like that:
     19 Rows(s) Affected
     statement prepare time(s)/globals/lines/disk: 0.0002s/11/761/0ms
               execute time(s)/globals/lines/disk: 0.0024s/48/5457/0ms
-                              cached query class: %sqlcq.SAMPLES.cls75
+                              cached query class: %sqlcq.USER.cls75
     ---------------------------------------------------------------------------
 
 for shortee streams it terminates when stream ends
@@ -72,7 +72,7 @@ for shortee streams it terminates when stream ends
      
     Dumping result #1
     ID      chunk   City    Name    Age     Stream
-    1       1       Bensonhurst     Kovalev 16      Building shareholder value by delivering secure distributed devices an
+    1       1       Bensonh Kovalev 16      Building shareholder value by delivering secure distributed devices an
     _       2       _       _       _       d media for the Health Care community.||Scope ||An AmAn LoIcA On||Iso|
     _       3       _       _       _       |PlasmA||Atic CoLoIO||IcOpIon An Lo||Re||Ies Tw||Lo Dyna I||Atic To Ly
     _       4       _       _       _       ||Ecto O||AticL||Ism IAn Look||Plasm ||A||A Cop||Two IRe ||Two ||I||Dy
@@ -81,7 +81,7 @@ for shortee streams it terminates when stream ends
     _       7       _       _       _       ho||AmCo UniTe||AScope ComQuo IH||Two A Ect||Graph ||A ||Pyro Heli AnR
     _       8       _       _       _       eAn||Muc||Range IcTri||IonIsoIonAnC||A Wave Lo I||PusAt||To||Able ||Lo
     _       9       _       _       _       Ati||A||Quo||Ly LyIc||***Done***
-    2       1       Queensbury      Yeats   15      Spearheading the next generation of high-performance genetic virtualiz
+    2       1       Queensb Yeats   15      Spearheading the next generation of high-performance genetic virtualiz
     _       2       _       _       _       ed instruments for the Fortune 500.||LoI||IesMorphSy||Re Uni ||CoQuoEc
     _       3       _       _       _       to||Tech IesOn ||Invent Vi||To LyIonGeoIc||Able||Ion Ect||Co I Ic Quo
     _       4       _       _       _       U||AOn Much Ly To||Iso Much G||Am||LoIsmGraph Pus ||ReOp ViaComLo||OpI
@@ -95,13 +95,13 @@ for shortee streams it terminates when stream ends
     20 Rows(s) Affected
     statement prepare time(s)/globals/lines/disk: 0.0064s/2019/15408/0ms
               execute time(s)/globals/lines/disk: 0.0021s/33/5021/0ms
-                              cached query class: %sqlcq.SAMPLES.cls84
+                              cached query class: %sqlcq.USER.cls84
     ---------------------------------------------------------------------------
 
 *   the next step is to honor the separators and display segments
 *   and also allow groups of segments
 *   As the basic functionality is there it's more a matter of chopping the streams 
 
-Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) for the extension of this example   
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-3.md) for the extension of this example      
 will show and control more result lines.
 

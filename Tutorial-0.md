@@ -105,7 +105,7 @@ And it looks like this:
         4 Rows(s) Affected
         statement prepare time(s)/globals/lines/disk: 0.0003s/11/583/0ms
                   execute time(s)/globals/lines/disk: 0.0006s/4/1515/0ms
-                                  cached query class: %sqlcq.SAMPLES.cls77
+                                  cached query class: %sqlcq.USER.cls77
         ---------------------------------------------------------------------------
     
 *       USER>>SELECT Id, age, name FROM rcc.Q0(99) where AGE > 21 
@@ -121,7 +121,7 @@ And it looks like this:
         5 Rows(s) Affected
         statement prepare time(s)/globals/lines/disk: 0.0726s/45969/214801/0ms
                   execute time(s)/globals/lines/disk: 0.0016s/123/2486/0ms
-                                  cached query class: %sqlcq.SAMPLES.cls81
+                                  cached query class: %sqlcq.USER.cls81
         ---------------------------------------------------------------------------
     
 

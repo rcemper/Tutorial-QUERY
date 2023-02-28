@@ -56,6 +56,8 @@ nextrec
   if 'qHandle.stream set qHandle.stream=qHandle.obj.Stream
   set text=qHandle.stream.Read(qHandle.maxtxt)
   set Row=$lb(qHandle.id,qHandle.obj.City,qHandle.obj.Name,qHandle.obj.Age,text)
+#;  just for a pretty demo
+  set Row=$lb(qHandle.id,$e(qHandle.obj.City,1,7),$e(qHandle.obj.Name,1,7),qHandle.obj.Age,text)
 /// row completed
   set qHandle.id=qHandle.id+1
   set qHandle.stream=0

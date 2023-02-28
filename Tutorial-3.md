@@ -1,3 +1,5 @@
+## STREAM in PIECES
+
 This tutorial is a follow on to Working with **%Query**  
 It was displaying the content of the input stream chopped in fixed-size chunks.  
 But often those streams are structured and have well-defined separators (e.g HL7)  
@@ -41,9 +43,9 @@ Here are some examples
 *   PieceCnt shows the total pieces in the first row and number of pieces folowing
 *   PieceId shows the number of the first Piece displayed
 
-The first example shows object **1..5** with max **33** chars  
+* The first example shows object **1..5** with max **33** chars  
 separated by **||** pieces **2..4**  grouped by **2**  with **3** previous characters
-
+````
     USER>>call rcc.Q3(1,5,33,'||',2,4,2,3)
     7.     call rcc.Q3(1,5,33,'||',2,4,2,3)
     
@@ -62,10 +64,10 @@ separated by **||** pieces **2..4**  grouped by **2**  with **3** previous ch
               execute time(s)/globals/lines/disk: 0.0060s/186/21480/0ms
                               cached query class: %sqlcq.USER.cls86
     ---------------------------------------------------------------------------
-
-Nex example:All records from 5 to end, maxum 33 characters, separated with **||**  
-pieces 50 ..55 line by line
-
+````
+*  Next example:     
+All records from **5** to **end**, only **33** characters, separated with **||** pieces **50 ..55** and **1** by line
+````
     USER>>call rcc.Q3(5,,33,'||',50,55,1)
     9.     call rcc.Q3(5,,33,'||',50,55,1)
     
@@ -89,6 +91,6 @@ pieces 50 ..55 line by line
               execute time(s)/globals/lines/disk: 0.0082s/245/28753/0ms
                               cached query class: %sqlcq.USER.cls103
     ---------------------------------------------------------------------------
-    
+````    
 
 I hope you liked it so far and I count on your votes

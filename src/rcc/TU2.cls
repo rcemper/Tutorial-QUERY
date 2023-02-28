@@ -5,7 +5,7 @@ Query Q2(
 	idfrom As %Integer = 1,
 	idto As %Integer = 0,
 	maxtxt As %Integer = 25,
-	chunks As %Integer = 1) As %Query(CONTAINID = 1, ROWSPEC = "ID:%Integer,chunk:%Integer,City:%String,Name:%String,Age:%Integer,Stream:%String(EXTERNALSQLTYPE = ""LONGVARCHAR"", MAXLEN = """")") [ SqlName = Q2, SqlProc ]
+	chunks As %Integer = 1) As %Query(CONTAINID = 1, ROWSPEC = "ID:%Integer,City:%String,Name:%String,Age:%Integer,chunk:%Integer,Stream:%String(EXTERNALSQLTYPE = ""LONGVARCHAR"", MAXLEN = """")") [ SqlName = Q2, SqlProc ]
 {
 }
 
@@ -62,10 +62,12 @@ nextrec
   if 'qHandle.stream set qHandle.stream=qHandle.obj.Stream
   set text=qHandle.stream.Read(qHandle.maxtxt)
   if qHandle.chcnt=qHandle.chunks {
-    set Row=$lb(qHandle.id,1,qHandle.obj.City,qHandle.obj.Name,qHandle.obj.Age,text)
+    set Row=$lb(qHandle.id,qHandle.obj.City,qHandle.obj.Name,qHandle.obj.Age,1,text)
+#; just for pretty demo
+    set Row=$lb(qHandle.id,$e(qHandle.obj.City,1,7),$e(qHandle.obj.Name,1,7),qHandle.obj.Age,1,text)
     if qHandle.stream.AtEnd set qHandle.chcnt=0
   } else  {
-    set Row=$lb("_",qHandle.chunks-qHandle.chcnt+1,"_","_","_",text)
+    set Row=$lb("_","_","_","_",qHandle.chunks-qHandle.chcnt+1,text)
   }
   set qHandle.chcnt=qHandle.chcnt-1
   if 'qHandle.stream.AtEnd,qHandle.chcnt>0 quit $$$OK

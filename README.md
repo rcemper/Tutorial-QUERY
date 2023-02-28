@@ -20,7 +20,15 @@ docker-compose exec iris iris session iris
 
 **[or use Online Demo](https://dataset-oex-reviews.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :**
 
-### Example 1 
+### Examples
+follow   
+[Tutorial Chapter 0](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-0.md)  
+[Tutorial Chapter 1](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-1.md)   
+[Tutorial Chapter 2](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md)   
+[Tutorial Chapter 3](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-1.md)    
+or 
+
+[Article in DC](https://community.intersystems.com/post/tutorial-working-query-1)
 
  ![](https://raw.githubusercontent.com/rcemper/IRIS-fast-ECP-setup/master/CodeQuality.JPG)
 

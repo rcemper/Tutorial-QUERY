@@ -27,9 +27,9 @@ pieces of our stream.
       Quit $$$OK
     }
 
-*   I now have a limit and a counter of displayed chunks default is 1 chunk
-*   the Stream Object is kept open in qHandle to avoid reload
-*   once the stream is empty I jump to the next available object.
+*   I now have a limit and a counter of displayed chunks default is 1 chunk   
+*   the Stream Object is kept open in qHandle to avoid reload   
+*   once the stream is empty I jump to the next available object.  
 
 and it looks like that:  
  
@@ -102,6 +102,10 @@ for shortee streams it terminates when stream ends
 *   and also allow groups of segments
 *   As the basic functionality is there it's more a matter of chopping the streams 
 
-Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-3.md) for the extension of this example      
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-3.md) for the extension of this example that        
 will show and control more result lines.
 
+Just a reminder:   
+All test data are generated using the System method %Populate    
+So your output will be different . I suggest you run your tests also with other parameters   
+than the shown examples to get the full power of this tool.  

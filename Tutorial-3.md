@@ -33,14 +33,14 @@ The Stremfunction used is ReadSQL(start, end). It is a somewhat sensitive
 and honors unprecise values with no result.  
 It is all packaged the method Piece() of the example code 
 
-To enable multiple reentrances in the Fetch method all parameters are kept a in  
+To enable multiple reentrances in the Fetch method all parameters are kept in  
 the common JSON object of the customized Query.
 
 Here are some examples
 
 *   Record #3 was deleted
 *   Record#4 has no stream
-*   PieceCnt shows the total pieces in the first row and number of pieces folowing
+*   PieceCnt shows the total pieces in the first row and number of pieces following
 *   PieceId shows the number of the first Piece displayed
 
 * The first example shows object **1..5** with max **33** chars  
@@ -92,5 +92,9 @@ All records from **5** to **end**, only **33** characters, separated with **||**
                               cached query class: %sqlcq.USER.cls103
     ---------------------------------------------------------------------------
 ````    
-
-I hope you liked it so far and I count on your votes
+Just a reminder:   
+All test data are generated using the System method %Populate   
+So your output will be different . I suggest you run our tests also with other parameters   
+than the shown examples to get the full power of this tool.  
+   
+I hope you liked it so far and I can count on your votes.

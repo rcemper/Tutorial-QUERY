@@ -94,7 +94,7 @@ All records from **5** to **end**, only **33** characters, separated with **||**
 ````    
 Just a reminder:   
 All test data are generated using the System method %Populate   
-So your output will be different . I suggest you run our tests also with other parameters   
+So your output will be different . I suggest you run your tests also with other parameters   
 than the shown examples to get the full power of this tool.  
    
 I hope you liked it so far and I can count on your votes.

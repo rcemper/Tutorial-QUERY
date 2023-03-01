@@ -134,7 +134,7 @@ It's immediately obvious to you that instead of the Stream content you get a my
 Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-1.md) of a custom code based Query. 
 
 Just a reminder:   
-All test data are generated using the System method %Populate   
-So your output will be different . I suggest you run our tests also with other parameters   
-than the shown examples to get the full power of this tool.
-  
+All test data are generated using the System method %Populate    
+So your output will be different . I suggest you run your tests also with other parameters   
+than the shown examples to get the full power of this tool.  
+    

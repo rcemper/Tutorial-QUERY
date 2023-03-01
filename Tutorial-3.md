@@ -68,7 +68,7 @@ separated by **||** pieces **2..4**  grouped by **2**  with **3** previous ch
 *  Next example:     
 All records from **5** to **end**, only **33** characters, separated with **||** pieces **50 ..55** and **1** by line
 ````
-    USER>>call rcc.Q3(5,,33,'||',50,55,1)
+    [SQL]USER>>call rcc.Q3(5,,33,'||',50,55,1)
     9.     call rcc.Q3(5,,33,'||',50,55,1)
     
     Dumping result #1

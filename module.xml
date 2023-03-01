@@ -2,8 +2,8 @@
 <Export generator="Cache" version="25">
   <Document name="tutorial-%query.ZPM">
     <Module>
-      <Name>utorial-%query/Name>
-	  <Description>Run Command in Container</Description> 
+      Name>tutorial-%query</Name>
+	  <Description>show Class QUERY</Description> 
       <Version>0.0.1</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>

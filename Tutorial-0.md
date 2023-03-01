@@ -36,8 +36,8 @@ using || (double pipe) as a segment separator.  
 
 It's simply USER>**Do ##class(rcc.TU).Populate(8)**
 ````
-    kill ^rcc.TUD(3)           ;; make aa gap
-    set $LI(^rcc.TUD(4),4)=""  ;; no stream
+    USER>kill ^rcc.TUD(3)           ;; make aa gap
+    USER>set $LI(^rcc.TUD(4),4)=""  ;; no stream
     USER>zw ^rcc.TUD
     ^rcc.TUD=8
     ^rcc.TUD(1)=$lb("Bensonhurst","Kovalev",16,"1")

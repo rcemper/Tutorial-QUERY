@@ -34,7 +34,7 @@ pieces of our stream.
 and it looks like that:  
  
 
-    USER>>call rcc.Q2(1,,,3)
+    [SQL]USER>>call rcc.Q2(1,,,3)
     11.     call rcc.Q2(1,,,3)
     
     Dumping result #1

@@ -67,7 +67,7 @@ and it looks like that:
 
 for shortee streams it terminates when stream ends
 
-    USER>>call rcc.Q2(,4,70,20)
+    [SQL]USER>>call rcc.Q2(,4,70,20)
     22.     call rcc.Q2(,4,70,20)
      
     Dumping result #1

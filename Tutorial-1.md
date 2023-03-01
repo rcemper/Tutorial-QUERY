@@ -154,4 +154,11 @@ statement prepare time(s)/globals/lines/disk: 0.0065s/1982/14324/0ms
 ````  
 Getting just the beginning of our stream is not always sufficient.
 
-Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) for the extension of this example will show and control more result lines.  
+Follow me on to the [**next chapter**](https://github.com/rcemper/Tutorial-QUERY/blob/main/Tutorial-2.md) for the extension of this example that will show and control more result lines.  
+
+Just a reminder:   
+All test data are generated using the System method %Populate    
+So your output will be different . I suggest you run your tests also with other parameters   
+than the shown examples to get the full power of this tool.  
+  
+

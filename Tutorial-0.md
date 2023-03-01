@@ -28,7 +28,7 @@ stream documents might be directly attached to it.
 The class is defined as \[Final\] to keep the Global more readable.
 
 The demo content is generated using %Populate Utility.   
-Therefore your data will look differently.  
+Therefore your data will look differenetly.  
 Except for the Stream that is not serviced by %Populate.  
 Here I generate some text that is randomly split into sections  
 using || (double pipe) as a segment separator.    

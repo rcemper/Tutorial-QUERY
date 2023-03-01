@@ -116,7 +116,7 @@ ClassMethod Piece(ByRef qj) As %Status
     set qj.pcpos=pcpos_$lb(qj.stream.Size+1)  ; after last char
     do qj.stream.Rewind()
   }
-  set start=$li(qj.pcpos,qj.startpc)-qj.before
+  set start=$lg(qj.pcpos,qj.startpc)-qj.before
   if start <1 set start=1
   if qj.endpc>$ll(qj.pcpos) set qj.endpc=qj.pcnt
   if qj.endpc="" set qj.endpc=qj.startpc 

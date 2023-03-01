@@ -28,7 +28,7 @@ stream documents might be directly attached to it.
 The class is defined as \[Final\] to keep the Global more readable.
 
 The demo content is generated using %Populate Utility.   
-Therefore your data will look differenetly.  
+Therefore your data will look differenet than here.  
 Except for the Stream that is not serviced by %Populate.  
 Here I generate some text that is randomly split into sections  
 using || (double pipe) as a segment separator.    
@@ -80,7 +80,7 @@ so it looks like this:
 
 ### WHAT IS THIS GOOD FOR ?
 
-*   This is, of course, the most simple statement. Normally  you would use it for rathe complex SQL statements that are frozen now and as SQLprocedure available anywhere internal or from some external ODBC or JDBC client 
+*   This is, of course, the most simple statement. Normally  you would use it for rather complex SQL statements that are frozen now and as SQLprocedure available anywhere internal or from some external ODBC or JDBC client 
 *   all ODBC/JDBC protocol is precompiled for your query. 
 *   It looks like embedded SQL but you are not caught in your classmethod.
 *   internal it is available for %ResultSet, or  %SQL.Statement or $system.SQL.Shell()

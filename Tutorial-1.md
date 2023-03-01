@@ -136,7 +136,7 @@ The query takes 3 simple input parameters:
 ````    
 *   and here a short test
 ````    
-USER>>call rcc.Q1(4,7)
+[SQL]USER>>call rcc.Q1(4,7)
  8.      call rcc.Q1(4,7)
 
 Dumping result #1

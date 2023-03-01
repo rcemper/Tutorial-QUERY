@@ -27,6 +27,17 @@ The idea in background: If this is a patient record then some big
 stream documents might be directly attached to it.  
 The class is defined as \[Final\] to keep the Global more readable.
 
+The demo content is generated using %Populate Utility.   
+Therefore your data will look differently.  
+Except for the Stream that is not serviced by %Populate.  
+Here I generate some text that is randomly split into sections  
+using || (double pipe) as a segment separator.    
+(! it is not a tutoriral on %Populate Utility!)
+
+It's simply USER>**Do ##class(rcc.TU).Populate(8)**
+````
+    kill ^rcc.TUD(3)           ;; make aa gap
+    set $LI(^rcc.TUD(4),4)=""  ;; no stream
     USER>zw ^rcc.TUD
     ^rcc.TUD=8
     ^rcc.TUD(1)=$lb("Bensonhurst","Kovalev",16,"1")
@@ -36,16 +47,8 @@ The class is defined as \[Final\] to keep the Global more readable.
     ^rcc.TUD(6)=$lb("Elmhurst","Jenkins",29,"6")
     ^rcc.TUD(7)=$lb("Islip","Drabek",61,"7")
     ^rcc.TUD(8)=$lb("Islip","Kovalev",88,"8")
-
-The demo content is generated using %Populate Utility.  
-Except for the Stream that is not serviced by %Populate.  
-Here I generate some text that is randomly split into sections  
-using || (double pipe) as a segment separator.    
-(! it is not a tutoriral on %Populate Utility!)
-
-It's simply USER>**Do ##class(rcc.TU).Populate(8)**
-
-Closer examination shows that I remove the stream for ID=4  
+````
+You see that I remove the stream for ID=4  
 and also the whole ID=3 to simulate missing content.
 
 **The case %SQLquery**
@@ -71,8 +74,9 @@ you may do it just by typing or using Studio's Inspector which knows all quotes 
 *   SqlName \= Q0  assigns a name within your class package (mostly simpler)
 *   **most important:** your SQL statement applying your input parameters as host variables
 
-so it looks like this:  
-![]([/](https://community.intersystems.com/sites/default/files/inline/images/images/image(5657).png)
+so it looks like this:   
+     
+![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5657).png)
 
 ### WHAT IS THIS GOOD FOR ?
 
@@ -85,12 +89,12 @@ so it looks like this:
 And it looks like this:
 
 *       
-        USER>zzq
+        USER>DO $system.SQL.Shell()
         SQL Command Line Shell
         ----------------------------------------------------
         The command prefix is currently set to: <<nothing>>.
         Enter q to quit, ? for help.
-        USER>>call rcc.q0(4)
+        [SQL]USER>>call rcc.q0(4)
         3.      call rcc.q0(4)
         
         Dumping result #1
@@ -108,7 +112,7 @@ And it looks like this:
                                   cached query class: %sqlcq.USER.cls77
         ---------------------------------------------------------------------------
     
-*       USER>>SELECT Id, age, name FROM rcc.Q0(99) where AGE > 21 
+*       [SQL]USER>>SELECT Id, age, name FROM rcc.Q0(99) where AGE > 21 
         6.      SELECT Id, age, name FROM rcc.Q0(99) where AGE > 21 
          
         ID      Age     Name

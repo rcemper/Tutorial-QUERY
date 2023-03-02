@@ -18,7 +18,7 @@ docker-compose up -d --build
 docker-compose exec iris iris session iris
 ```
 
-**[or use Online Demo](https://dataset-oex-reviews.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :**
+**[or use Online Demo](https://tutorial-query.demo.community.intersystems.com/terminal/)   :**   
 
 ### Examples
 follow   
@@ -32,6 +32,6 @@ or
 
 The [Video]() is still work in progress
 
-[Demo Server SMP](https://totorial-query.demo.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://totorial-query.demo.community.intersystems.com/terminal/)    
+[Demo Server SMP](https://tutorial-query.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://tutorial-query.demo.community.intersystems.com/terminal/)    
         

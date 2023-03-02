@@ -88,7 +88,7 @@ nextrec
       set Row=$lb("_","_","_","_",qj.grp,qj.startpc,qj.text)
   }
   set qj.startpc=qj.endpc+1  
-  if qj.grp,'qj.stream.AtEnd,qj.endpc<qj.grpend,qj.startpc<qj.pcnt quit $$$OK
+  if qj.grp,'qj.stream.AtEnd,qj.endpc<qj.grpend,qj.startpc'>qj.pcnt quit $$$OK
 /// row completed
   set qj.id=qj.id+1
   set qj.stream=0

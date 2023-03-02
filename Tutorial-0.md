@@ -34,10 +34,14 @@ Here I generate some text that is randomly split into sections
 using || (double pipe) as a segment separator.    
 (! it is not a tutoriral on %Populate Utility!)
 
-It's simply USER>**Do ##class(rcc.TU).Populate(8)**
+In order to simulate  missing content I removed 
+the stream for ID=4 and also the whole ID=3 .
+
+It's simply 
+USER>**Do ##class(rcc.TU).Populate(8)**   
+USER>**kill ^rcc.TUD(3)**           ;; make a gap
+USER>**set $LI(^rcc.TUD(4),4)=""**  ;; no stream
 ````
-    USER>kill ^rcc.TUD(3)           ;; make aa gap
-    USER>set $LI(^rcc.TUD(4),4)=""  ;; no stream
     USER>zw ^rcc.TUD
     ^rcc.TUD=8
     ^rcc.TUD(1)=$lb("Bensonhurst","Kovalev",16,"1")
@@ -48,10 +52,7 @@ It's simply USER>**Do ##class(rcc.TU).Populate(8)**
     ^rcc.TUD(7)=$lb("Islip","Drabek",61,"7")
     ^rcc.TUD(8)=$lb("Islip","Kovalev",88,"8")
 ````
-You see that I remove the stream for ID=4  
-and also the whole ID=3 to simulate missing content.
-
-**The case %SQLquery**
+## The case %SQLquery
 
 You create an empty class frame  (**rcc.TU0**) and let the wizard add a Query  
 ![](https://community.intersystems.com/sites/default/files/inline/images/images/image(5652).png)

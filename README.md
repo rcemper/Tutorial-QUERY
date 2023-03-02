@@ -30,7 +30,7 @@ or
 
 [Article in DC](https://community.intersystems.com/post/tutorial-working-query-1)
 
- ![](https://raw.githubusercontent.com/rcemper/IRIS-fast-ECP-setup/master/CodeQuality.JPG)
+The [Video]() is sitll work in progress
 
 [Demo Server SMP](https://jdate.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
 [Demo Server WebTerminal](https://jdate.demo.community.intersystems.com/terminal/)    

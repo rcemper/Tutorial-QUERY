@@ -1,4 +1,4 @@
-### common template
+###Working with %QUERY
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
@@ -30,7 +30,7 @@ or
 
 [Article in DC](https://community.intersystems.com/post/tutorial-working-query-1)
 
-The [Video]() is still work in progress
+[Video](https://youtu.be/KlfFzj3zY4M) 
 
 [Demo Server SMP](https://tutorial-query.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
 [Demo Server WebTerminal](https://tutorial-query.demo.community.intersystems.com/terminal/)    

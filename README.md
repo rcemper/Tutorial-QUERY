@@ -1,4 +1,5 @@
 # Working with %QUERY
+[![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2FTutorial-QUERY&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2FTutorial-QUERY)   
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.

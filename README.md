@@ -1,5 +1,7 @@
+<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
+<b>&nbsp;no maintenance or update</b>
+
 # Working with %QUERY
-     
 
 ### Examples
 follow   
@@ -12,4 +14,5 @@ or
 [Article in DC](https://community.intersystems.com/post/tutorial-working-query-1)
 
 [Video](https://youtu.be/KlfFzj3zY4M) 
+
 
